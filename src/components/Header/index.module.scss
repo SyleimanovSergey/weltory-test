@@ -1,0 +1,14 @@
+.header {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	height: 80px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	box-sizing: border-box;
+
+	@media only screen and (max-width: 1200px) {
+		padding-left: 10px;
+	}
+}

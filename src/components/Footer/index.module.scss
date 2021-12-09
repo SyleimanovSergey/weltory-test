@@ -1,0 +1,150 @@
+.footer {
+	max-width: 1030px;
+	width: 80%;
+	margin: 180px auto 80px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	@media only screen and (max-width: 768px) {
+		margin-top: 135px;
+		padding-bottom: 130px;
+		flex-direction: column;
+	}
+
+	@media only screen and (max-width: 1200px) {
+		flex-wrap: wrap;
+	}
+}
+
+.visuallyHidden {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+}
+
+.blockApp {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 10px;
+
+	@media only screen and (max-width: 768px) {
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 50px;
+	}
+
+	@media only screen and (max-width: 1200px) {
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 30px;
+	}
+}
+
+.text {
+	font-family: Montserrat, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 142%;
+	color: #fff;
+	opacity: 0.7;
+
+	@media only screen and (max-width: 768px) {
+		width: 100%;
+		text-align: center;
+	}
+}
+
+.appStore {
+	display: block;
+	width: 40px;
+	height: 40px;
+	background-image: url('../../assets/images/app-store.png');
+	background-repeat: no-repeat;
+}
+
+.playMarket {
+	display: block;
+	width: 40px;
+	height: 40px;
+	background-image: url('../../assets/images/google-play.png');
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.blockCopyright {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	@media only screen and (max-width: 768px) {
+		margin-bottom: 30px;
+	}
+}
+
+.itemCopyright {
+	font-family: Montserrat, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 142%;
+	color: #ffffff;
+	opacity: 0.5;
+	text-decoration: none;
+
+	&:hover {
+		opacity: 1;
+	}
+}
+
+.copyrightTerms {
+	padding-right: 15px;
+	border-right: 1px solid #6f7177;
+}
+
+.copyrightPrivacy {
+	padding-left: 15px;
+	border-left: 1px solid #6f7177;
+}
+
+.blockSocial {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.socialItem {
+	display: block;
+	width: 40px;
+	height: 40px;
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: 0.4;
+
+	&:hover {
+		opacity: 1;
+	}
+}
+
+.twitter {
+	background-image: url('../../assets/images/twitter.svg');
+}
+
+.fb {
+	background-image: url('../../assets/images/fb.svg');
+}
+
+.instagram {
+	background-image: url('../../assets/images/instagram.svg');
+}
+
+.linkedin {
+	background-image: url('../../assets/images/linkedin.svg');
+}

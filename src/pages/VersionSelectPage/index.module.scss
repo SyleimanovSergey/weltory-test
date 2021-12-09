@@ -1,0 +1,44 @@
+@import '../../assets/styles/variables.scss';
+
+.main {
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0 50px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+
+	@media only screen and (max-width: 768px) {
+		padding: 0 20px;
+		box-sizing: border-box;
+	}
+
+	@media only screen and (max-width: 1200px) {
+		padding: 0 20px;
+		box-sizing: border-box;
+	}
+}
+
+.logo {
+	flex: 1;
+	margin: 0 auto 20px;
+}
+
+.title {
+	margin-bottom: 45px;
+	font-family: Montserrat, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 37px;
+	line-height: 40px;
+	color: $White;
+
+	@media only screen and (max-width: 768px) {
+		font-size: 27px;
+		line-height: 32px;
+		text-align: center;
+	}
+}
