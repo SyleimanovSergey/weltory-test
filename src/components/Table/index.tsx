@@ -16,9 +16,13 @@ const Table: React.FC = () => {
 					<tr>
 						<th className={styles.titleTable}>What you get</th>
 						<th className={styles.collapseTable} />
-						<th className={`${styles.titleTable} ${styles.titleFree}`}>for free</th>
+						<th className={`${styles.titleTable} ${styles.titleFree}`}>
+							<span className={styles.titleVisibility}>for</span> free
+						</th>
 						<th className={styles.collapseTable} />
-						<th className={`${styles.titleTable} ${styles.titlePro}`}>in Pro</th>
+						<th className={`${styles.titleTable} ${styles.titlePro}`}>
+							<span className={styles.titleVisibility}>in</span> Pro
+						</th>
 					</tr>
 				</thead>
 			</table>
@@ -33,9 +37,11 @@ const Table: React.FC = () => {
 						return (
 							<tr key={item.text}>
 								<td className={boxFirst}>{item.text}</td>
+								<td className={styles.collapseTable} />
 								<td className={box}>
 									<img src={item.free ? logoActive : logoInactive} alt="#" />
 								</td>
+								<td className={styles.collapseTable} />
 								<td className={box}>
 									<img src={item.pro ? logoActive : logoInactive} alt="#" />
 								</td>
@@ -54,9 +60,11 @@ const Table: React.FC = () => {
 						return (
 							<tr key={item.text}>
 								<td className={boxFirst}>{item.text}</td>
+								<td className={styles.collapseTable} />
 								<td className={box}>
 									<img src={item.free ? logoActive : logoInactive} alt="#" />
 								</td>
+								<td className={styles.collapseTable} />
 								<td className={box}>
 									<img src={item.pro ? logoActive : logoInactive} alt="#" />
 								</td>
